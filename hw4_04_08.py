@@ -28,8 +28,6 @@ a = {
     3: 'Tree',
     4: 'Four',
 }
-a[1] = 5
-a[2] = 6
-a[3] = 7
-a[4] = 8 #
-print(a)
+set1 = {5, 6, 7, 8}
+a_keys = a.keys()
+print(a_keys | set1, ' - combining keys from list with sets')
