@@ -14,19 +14,14 @@ for a, b in enumerate(list_names):
 print('----------------------------')
 
 x = int(input('Enter whole number: '))
-list1 = []
-for g in range(1, x):
-    list1.append(g)
-for h in list1:
+for h in range(x):
     h = h**2
     print(h)
 
 print('----------------------------')
 
-n = 16
-for a in range(1, 16):
-    n -= 1
-    print(n)
+for a in range(15, 0, -1):
+    print(a)
 
 print('----------------------------')
 
@@ -57,11 +52,12 @@ print(''.join(f))
 
 print('----------------------------')
 
-a = -1
-list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-while a < list1[8]:
+a = 1
+w = []
+while len(w) < 10:
+    w.append(a)
     a += 2
-    print(a)
+print(w)
 
 print('----------------------------')
 
