@@ -20,10 +20,7 @@ func_2( int(input('Enter 1 side: ')),
 
 print('### 3 ###')
 
-while True:
-    number_1 = int(input('Enter first number: '))
-    number_2 = int(input('Enter second number: '))
-    sign = str(input('+, -, *, /? : '))
+def calculate(number_1, number_2, sign):
     result = 0
     if sign == '+':
         result = number_1 + number_2
@@ -36,6 +33,9 @@ while True:
         print(result)
     elif sign == '/':
         result = number_1 / number_2
-        print(int(result))
+        print(result)
     else:
         print('Error!')
+calculate(int(input('Enter first number: ')),
+          int(input('Enter second number: ')),
+          str(input('Enter sign: ')))
