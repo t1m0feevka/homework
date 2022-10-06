@@ -1,11 +1,11 @@
 import requests
+        print('Час виконання : {} секунд.'.format(end-start))
 def decorator(func):
     import time
     def wrapper(*args, **kwargs):
         start = time.time()
         return_value = func(*args, **kwargs)
         end = time.time()
-        print('Час виконання : {} секунд.'.format(end-start))
         return return_value
     return wrapper
 
@@ -23,5 +23,5 @@ query = 'news'
 for i in search(query, tld='co.in', num=10, stop=10, pause=2):
     print(i)
 
-
+#
 
